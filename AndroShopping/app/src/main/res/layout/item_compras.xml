@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:weightSum="14">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_marginRight="18dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/edtData_hora"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spinner_compras"
+            android:layout_width="match_parent"
+           
+            android:layout_height="40dp">
+        </Spinner>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/edtPreu"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/edtProd"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" 
+            />
+    </LinearLayout>
+
+</LinearLayout>

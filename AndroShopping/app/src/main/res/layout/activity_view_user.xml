@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.enric.androshoping.Activitats.ViewUser">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtEmail"
+                android:text="@string/email_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txtNom"
+                android:text="@string/nom_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="18dp"
+                android:textColor="#000"/>
+
+
+            <TextView
+                android:id="@+id/txtGenero"
+                android:text="@string/genere"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="0dp"
+                android:textSize="15sp"
+                android:layout_weight="0.75"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="18dp"
+                android:textColor="#000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_marginBottom="18dp">
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton android:id="@+id/radiobutton_hom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hombre"/>
+                    <RadioButton android:id="@+id/radiobutton_muj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mujer"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtEdad"
+                android:text="@string/edad_"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="0dp"
+                android:textSize="15sp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.75"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/txtCompras"
+                android:text="@string/compras_"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="0dp"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="18dp"
+                android:layout_weight="0.75"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:text="@string/total_"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="0dp"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.75"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

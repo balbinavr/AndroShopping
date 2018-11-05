@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="#FFF"
+    tools:context=".MainActivity"
+    >
+
+        <TextView
+            android:id="@+id/HistorictxtData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentStart="true"
+            />
+        <TextView
+            android:id="@+id/HistorictxtPreu"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"/>
+
+        <TextView
+            android:id="@+id/HistorictxtEmail"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/HistorictxtData"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/HistorictxtQuantitat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_below="@+id/HistorictxtEmail"
+            />
+        <TextView
+            android:id="@+id/HistorictxtProducte"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_below="@+id/HistorictxtEmail"
+            android:layout_alignParentRight="true"
+            android:textColor="#000"/>
+
+</RelativeLayout>

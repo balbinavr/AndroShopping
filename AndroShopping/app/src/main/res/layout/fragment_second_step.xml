@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context="com.enric.androshoping.Fragments.SecondStep">
+
+    <TextView
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:text="@string/foto"
+    android:textSize="16dp"
+    android:textColor="#000"
+    android:gravity="center_vertical"
+    android:layout_height="0dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="2">
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+        <Button
+            android:id="@+id/btnSelectFoto"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/selec_foto"/>
+        </LinearLayout>
+    <TextView
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:text="@string/preu"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:gravity="bottom"
+        android:layout_height="0dp" />
+    <EditText
+        android:id="@+id/second_preu"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="numberDecimal"
+    />
+    <CheckBox
+        android:id="@+id/checkActiu"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_height="0dp"
+        android:textSize="15sp"
+        android:text="@string/actiuProd"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:text="@string/stock"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:gravity="bottom"
+        android:layout_height="0dp" />
+    <EditText
+        android:id="@+id/second_stock"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="numberSigned"
+        />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="60dp"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:icon="@drawable/icon"
+    android:weightSum="2"
+    android:label="@string/menu"
+    tools:context="com.enric.androshoping.Activitats.MenuUser">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFF"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/layUsuari"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/man_icon2"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="@string/perfil"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layCompra"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/images1"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="@string/comprar"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#FFF"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/layHistoric"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:padding="18dp"
+                android:src="@drawable/facturas"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="@string/historicCompres"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/laySortir"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/salir"
+                android:padding="18dp"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="@string/salir"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

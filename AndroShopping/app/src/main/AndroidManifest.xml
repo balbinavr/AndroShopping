@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.enric.androshoping" >
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/compra"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Activitats.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activitats.LoginPage"
+            android:label="@string/title_activity_login_page"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.RegisterPage"
+            android:label="@string/title_activity_register_page"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.GestionProductos"
+            android:label="@string/title_activity_gestion_productos"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.NewProduct"
+            android:label="@string/title_activity_new_product"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.ViewProduct"
+            android:label="@string/title_activity_view_product"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.GestionUsuarios"
+            android:label="@string/title_activity_gestion_usuarios"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.NewUser"
+            android:label="@string/title_activity_new_user"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.ViewUser"
+            android:label="@string/title_activity_view_user"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.ListadoVentas"
+            android:label="@string/title_activity_listado_ventas"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.Comprar"
+            android:label="@string/title_activity_comprar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.HistoricCompres"
+            android:label="@string/title_activity_historic_compres"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.MenuAdmin"
+            android:label="@string/title_activity_menu_admin"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.MenuUser"
+            android:label="@string/title_activity_menu_user"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.DatePicker"
+            android:label="@string/title_activity_date_picker"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activitats.ConfirmarCompra"
+            android:label="@string/title_activity_confirmar_compra"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

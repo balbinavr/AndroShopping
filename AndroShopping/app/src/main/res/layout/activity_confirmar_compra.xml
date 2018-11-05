@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context="com.enric.androshoping.Activitats.ConfirmarCompra"
+    android:orientation="vertical"
+    android:weightSum="20">
+
+
+    <ListView
+        android:layout_weight="16"
+        android:id="@+id/confirma_comprar_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clickable="false">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="18dp"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom">
+        
+        <Button
+            android:id="@+id/confirma_comprar_cancel"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Cancel"/>
+        
+        <Button
+            android:id="@+id/confirma_comprar_accept"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="Acceptar"/>
+        
+    </RelativeLayout>
+</LinearLayout>

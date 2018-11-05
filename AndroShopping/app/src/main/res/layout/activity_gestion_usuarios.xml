@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="15"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context="com.enric.androshoping.Activitats.GestionUsuarios">
+
+    <TextView
+        android:text="@string/select_user"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="0dp"
+        android:textSize="16sp"
+        android:background="#d4ffe3"
+        android:layout_weight="2"
+        android:textColor="#000"/>
+
+    <ListView
+        android:layout_weight="13"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    android:orientation="vertical"
+    tools:context="com.enric.androshoping.Fragments.FragmentComprar"
+    android:background="#FFF">
+
+    <EditText
+        android:id="@+id/compra_busca_producte_input"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

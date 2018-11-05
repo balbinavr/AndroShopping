@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    android:orientation="vertical"
+    tools:context="com.enric.androshoping.Fragments.ThirdStep"
+    android:padding="5dp">
+
+    <TextView
+        android:text="@string/select_prod"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:padding="10dp"/>
+
+    <ListView
+        android:layout_weight="8"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+
+    <EditText
+        android:paddingTop="20dp"
+        android:id="@+id/edtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColorHint="#000"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:hint="@string/tag"
+        android:inputType="text"/>
+    <Button
+        android:id="@+id/new_product_insertar_tag"
+        android:layout_width="wrap_content"
+        android:text="@string/insertar"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"/>
+
+
+</LinearLayout>

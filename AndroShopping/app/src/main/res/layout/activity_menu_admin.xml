@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="60dp"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="#FFF"
+    android:icon="@drawable/icon"
+    android:label="@string/menu"
+    tools:context="com.enric.androshoping.Activitats.MenuAdmin">
+
+
+    <LinearLayout
+        android:id="@+id/layProductes"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/app_product"
+                android:scaleType="fitEnd"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="@string/gestionProductos"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layUsuaris"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_group"
+                android:scaleType="fitEnd"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="@string/gestionUsuarios"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/layVentes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:padding="18dp"
+                android:src="@drawable/facturas"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="@string/estadoVentas"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/laySortir"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/salir"
+                android:padding="18dp"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:text="@string/salir"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

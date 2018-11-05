@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="10dp"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:weightSum="6">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"/>
+    <ImageButton
+        android:id="@+id/btnButtonUP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_collapse"
+        android:text="@string/up"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+    <ImageButton
+        android:id="@+id/btnButtonDOWN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/down"
+        android:src="@drawable/ic_action_expand"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <ImageButton
+        android:id="@+id/btnButtonDELETE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_discard_black"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+</LinearLayout>
